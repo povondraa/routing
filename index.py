@@ -9,7 +9,7 @@ def home():
 
 @app.route('/o-skole')
 def about_school():
-    return "Toto je stránka o škole."
+    return render_template('skola.html')
 
 
 @app.route('/student/<name>')
