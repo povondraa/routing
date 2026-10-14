@@ -14,8 +14,8 @@ def about_school():
 
 @app.route('/student/<name>')
 def student(name):
-    return f"Toto je stránka o studentovi {name}."
-
+    #return f"Toto je stránka o studentovi {name}."
+    return render_template('student.html', student_name=name)
 
 @app.route('/predmet/<int:id>')
 def subject(id):
